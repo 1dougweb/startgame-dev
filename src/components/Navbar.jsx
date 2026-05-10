@@ -7,6 +7,7 @@ const links = [
   { label: 'Conteúdo', href: '#curriculum' },
   { label: 'Depoimentos', href: '#testimonials' },
   { label: 'Professor', href: '#professor' },
+  { label: 'Preços', href: '#pricing' },
 ];
 
 export default function Navbar() {

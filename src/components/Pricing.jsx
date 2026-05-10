@@ -75,7 +75,7 @@ function PriceCard() {
         {/* CTA Button */}
         <a
           href={HOTMART_LINK}
-          className="w-full neon-btn shimmer-btn py-4 rounded-2xl font-bold text-base text-center"
+          className="w-full relative z-20 neon-btn shimmer-btn py-4 rounded-2xl font-bold text-base text-center flex items-center justify-center"
         >
           <span className="flex items-center justify-center gap-2">
             <Lock size={18} className="flex-shrink-0" />
