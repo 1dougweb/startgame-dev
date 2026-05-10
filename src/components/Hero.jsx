@@ -42,7 +42,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20, filter: 'blur(10px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="inline-flex items-center gap-2 mb-10 px-4 py-2 rounded-full border border-neon/40 bg-neon/10 text-neon-light text-sm font-medium"
+          className="inline-flex items-center gap-2 mb-6 md:mb-10 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-neon/40 bg-neon/10 text-neon-light text-xs md:text-sm font-medium"
         >
           <Zap size={14} className="fill-neon-light" />
           <span>Curso Online de Desenvolvimento de Jogos</span>
@@ -53,13 +53,13 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.85, filter: 'blur(12px)' }}
           animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
-          className="flex justify-center mb-10"
+          className="flex justify-center mb-6 md:mb-10"
         >
           <div className="relative">
             <img
               src={logoImg}
               alt="Start GameDev"
-              className="h-20 md:h-28 w-auto object-contain drop-shadow-[0_0_24px_rgba(124,58,237,0.55)]"
+              className="h-14 md:h-28 w-auto object-contain drop-shadow-[0_0_24px_rgba(124,58,237,0.55)]"
             />
           </div>
         </motion.div>
@@ -69,7 +69,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30, filter: 'blur(15px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          className="font-display font-bold text-5xl md:text-7xl text-white leading-tight mb-6"
+          className="font-display font-bold text-3xl sm:text-4xl md:text-7xl text-white leading-tight mb-6"
         >
           APRENDA A CRIAR{' '}
           <span className="relative inline-block">
@@ -86,7 +86,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-          className="text-slate-400 text-xl md:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed"
+          className="text-slate-400 text-base md:text-2xl mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed px-4 md:px-0"
         >
           Mesmo que você <span className="text-white font-medium">não saiba nada</span> sobre
           desenvolvimento de games
@@ -97,9 +97,9 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95, filter: 'blur(20px)' }}
           animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
-          className="relative w-full max-w-3xl mx-auto mb-4"
+          className="relative w-full max-w-3xl mx-auto mb-2 md:mb-4 px-2 md:px-0"
         >
-          <div className="relative rounded-2xl overflow-hidden video-glow border border-neon/30 bg-void-3">
+          <div className="relative rounded-xl md:rounded-2xl overflow-hidden video-glow border border-neon/30 bg-void-3">
             <VSLPlayer />
           </div>
         </motion.div>
@@ -108,7 +108,7 @@ export default function Hero() {
           initial={{ opacity: 0, filter: 'blur(5px)' }}
           animate={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="text-slate-500 text-sm mb-10 italic"
+          className="text-slate-500 text-xs md:text-sm mb-8 md:mb-10 italic"
         >
           *Assista o vídeo com atenção*
         </motion.p>
