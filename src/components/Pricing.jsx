@@ -195,6 +195,7 @@ export default function Pricing() {
 
           {/* Right — price card */}
           <motion.div
+            id="price-card"
             initial={{ opacity: 0, scale: 0.9, filter: 'blur(20px)' }}
             whileInView={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
             viewport={{ once: true }}

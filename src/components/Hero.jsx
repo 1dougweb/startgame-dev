@@ -121,7 +121,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4"
         >
           <a
-            href="https://go.hotmart.com/V83790993U?ap=ffb4&redirectionUrl=https%3A%2F%2Fcsjdigital.com.br%2Fstart-gamedev-97%2F"
+            href="#price-card"
             className="w-full sm:w-auto neon-btn shimmer-btn text-base md:text-lg px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold tracking-wide text-center"
           >
             <span className="flex items-center justify-center gap-2">
