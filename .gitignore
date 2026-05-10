@@ -22,17 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Media
-*.mp4
-*.mov
-*.avi
-*.wmv
-*.mp3
-*.wav
-*.zip
-*.rar
-*.7z
-*.exe
-*.dmg
-*.iso

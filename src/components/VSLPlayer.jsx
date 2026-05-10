@@ -1,8 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { VolumeX, Volume2, Play, Pause } from 'lucide-react';
-// import vslVideo from '../assets/Start Gamedev-final.mp4';
-
-const VSL_VIDEO_URL = 'https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-his-laptop-34444-large.mp4'; // Placeholder URL
+import vslVideo from '../assets/Start Gamedev.mp4';
 
 export default function VSLPlayer() {
   const videoRef = useRef(null);
@@ -80,7 +78,7 @@ export default function VSLPlayer() {
       {/* Video */}
       <video
         ref={videoRef}
-        src={VSL_VIDEO_URL}
+        src={vslVideo}
         className="w-full h-full object-cover pointer-events-none"
         playsInline
         autoPlay
