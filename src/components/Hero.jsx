@@ -121,12 +121,20 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4"
         >
           <a
-            href="#price-card"
-            className="w-full sm:w-auto neon-btn shimmer-btn text-base md:text-lg px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold tracking-wide text-center"
+            href="#pricing"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('price-card');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                window.history.pushState(null, null, '#pricing');
+              }
+            }}
+            className="w-full sm:w-auto neon-btn shimmer-btn text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold tracking-wide text-center"
           >
             <span className="flex items-center justify-center gap-2">
               <Zap size={20} className="fill-white" />
-              Quero aprender a criar um jogo
+              Quero criar meu primeiro jogo
             </span>
           </a>
         </motion.div>

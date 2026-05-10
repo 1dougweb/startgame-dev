@@ -20,6 +20,17 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const id = href.replace('#', '');
+    const element = document.getElementById(id === 'pricing' ? 'price-card' : id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: id === 'pricing' ? 'center' : 'start' });
+      window.history.pushState(null, null, href);
+    }
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <motion.nav
@@ -47,6 +58,7 @@ export default function Navbar() {
               <a
                 key={l.label}
                 href={l.href}
+                onClick={(e) => handleNavClick(e, l.href)}
                 className="text-slate-400 hover:text-white text-sm transition-colors duration-200"
               >
                 {l.label}
@@ -57,6 +69,7 @@ export default function Navbar() {
           {/* CTA */}
           <a
             href="#pricing"
+            onClick={(e) => handleNavClick(e, '#pricing')}
             className="hidden md:inline-flex items-center gap-1.5 px-5 py-2 rounded-xl bg-neon/15 border border-neon/40 text-neon-light text-sm font-semibold hover:bg-neon/25 hover:border-neon/60 transition-all duration-200"
           >
             <Zap size={14} className="fill-neon-light" />
@@ -87,7 +100,7 @@ export default function Navbar() {
               <a
                 key={l.label}
                 href={l.href}
-                onClick={() => setMenuOpen(false)}
+                onClick={(e) => handleNavClick(e, l.href)}
                 className="font-display font-semibold text-2xl text-white hover:text-neon-light transition-colors"
               >
                 {l.label}
@@ -95,7 +108,7 @@ export default function Navbar() {
             ))}
             <a
               href="#pricing"
-              onClick={() => setMenuOpen(false)}
+              onClick={(e) => handleNavClick(e, '#pricing')}
               className="neon-btn shimmer-btn mt-4 px-10 py-4 rounded-2xl font-bold"
             >
               <span>Quero o curso</span>
