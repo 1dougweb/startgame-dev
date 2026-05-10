@@ -8,10 +8,12 @@ import Pricing from './components/Pricing';
 import Professor from './components/Professor';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="min-h-screen bg-void text-slate-200 overflow-x-hidden">
+      <Navbar />
       <main>
         <Hero />
         <Benefits />
