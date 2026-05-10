@@ -17,8 +17,8 @@ export default function Testimonials() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
@@ -50,8 +50,8 @@ export default function Testimonials() {
             <motion.div
               key={i}
               variants={{
-                hidden: { opacity: 0, y: 30, filter: 'blur(15px)' },
-                show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.6 } }
+                hidden: { opacity: 0, y: 30 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.6 } }
               }}
               className="w-full md:w-auto flex justify-center"
             >

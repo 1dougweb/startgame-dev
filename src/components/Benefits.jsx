@@ -21,8 +21,8 @@ const containerVariants = {
   show: { transition: { staggerChildren: 0.1 } },
 };
 const cardVariants = {
-  hidden: { opacity: 0, y: 30, filter: 'blur(10px)' },
-  show:   { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.6, ease: 'easeOut' } },
+  hidden: { opacity: 0, y: 30 },
+  show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
 export default function Benefits() {
@@ -33,8 +33,8 @@ export default function Benefits() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"

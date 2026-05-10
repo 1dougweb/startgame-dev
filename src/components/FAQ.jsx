@@ -48,8 +48,8 @@ export default function FAQ() {
       
       <div className="relative z-10 max-w-4xl mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
@@ -77,8 +77,8 @@ export default function FAQ() {
             <motion.div
               key={i}
               variants={{
-                hidden: { opacity: 0, y: 15, filter: 'blur(10px)' },
-                show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.5 } }
+                hidden: { opacity: 0, y: 15 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
               }}
             >
               <BorderGlow

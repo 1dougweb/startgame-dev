@@ -39,8 +39,8 @@ export default function Hero() {
 
         {/* Badge */}
         <motion.div
-          initial={{ opacity: 0, y: -20, filter: 'blur(10px)' }}
-          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="inline-flex items-center gap-2 mb-6 md:mb-10 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-neon/40 bg-neon/10 text-neon-light text-xs md:text-sm font-medium"
         >
@@ -50,8 +50,8 @@ export default function Hero() {
 
         {/* Logo */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.85, filter: 'blur(12px)' }}
-          animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
           className="flex justify-center mb-6 md:mb-10"
         >
@@ -66,8 +66,8 @@ export default function Hero() {
 
         {/* Headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 30, filter: 'blur(15px)' }}
-          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           className="font-display font-bold text-3xl sm:text-4xl md:text-7xl text-white leading-tight mb-6"
         >
@@ -83,8 +83,8 @@ export default function Hero() {
 
         {/* Subheadline */}
         <motion.p
-          initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
-          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
           className="text-slate-400 text-base md:text-2xl mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed px-4 md:px-0"
         >
@@ -94,8 +94,8 @@ export default function Hero() {
 
         {/* VSL Video */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95, filter: 'blur(20px)' }}
-          animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
           className="relative w-full max-w-3xl mx-auto mb-2 md:mb-4 px-2 md:px-0"
         >
@@ -105,8 +105,8 @@ export default function Hero() {
         </motion.div>
 
         <motion.p
-          initial={{ opacity: 0, filter: 'blur(5px)' }}
-          animate={{ opacity: 1, filter: 'blur(0px)' }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.9, duration: 0.6 }}
           className="text-slate-500 text-xs md:text-sm mb-8 md:mb-10 italic"
         >
@@ -115,8 +115,8 @@ export default function Hero() {
 
         {/* CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
-          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1, ease: "easeOut" }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4"
         >
