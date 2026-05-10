@@ -118,15 +118,15 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 0.8, delay: 1, ease: "easeOut" }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4"
         >
           <a
             href="https://go.hotmart.com/V83790993U?ap=ffb4&redirectionUrl=https%3A%2F%2Fcsjdigital.com.br%2Fstart-gamedev-97%2F"
-            className="neon-btn shimmer-btn text-lg px-10 py-5 rounded-2xl font-bold tracking-wide"
+            className="w-full sm:w-auto neon-btn shimmer-btn text-base md:text-lg px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold tracking-wide text-center"
           >
-            <span className="flex items-center gap-2">
+            <span className="flex items-center justify-center gap-2">
               <Zap size={20} className="fill-white" />
-              Sim, quero aprender a criar um jogo
+              Quero aprender a criar um jogo
             </span>
           </a>
         </motion.div>
@@ -136,18 +136,18 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="mt-8 flex items-center justify-center gap-6 text-slate-500 text-sm"
+          className="mt-8 flex items-center justify-center gap-2 md:gap-6 text-slate-500 text-[10px] md:text-sm px-4"
         >
-          <span className="flex items-center gap-1.5">
-            <span className="text-neon font-bold text-base">2.500+</span> alunos
+          <span className="flex items-center gap-1 md:gap-1.5 whitespace-nowrap">
+            <span className="text-neon font-bold text-xs md:text-base">2.500+</span> alunos
           </span>
-          <span className="w-1 h-1 rounded-full bg-slate-600" />
-          <span className="flex items-center gap-1.5">
-            <span className="text-neon font-bold text-base">★★★★★</span>
+          <span className="w-1 h-1 rounded-full bg-slate-600 flex-shrink-0" />
+          <span className="flex items-center gap-1 md:gap-1.5 whitespace-nowrap">
+            <span className="text-neon font-bold text-xs md:text-base">★★★★★</span>
           </span>
-          <span className="w-1 h-1 rounded-full bg-slate-600" />
-          <span className="flex items-center gap-1.5">
-            Garantia de <span className="text-neon font-bold text-base">7 dias</span>
+          <span className="w-1 h-1 rounded-full bg-slate-600 flex-shrink-0" />
+          <span className="flex items-center gap-1 md:gap-1.5 whitespace-nowrap">
+            Garantia <span className="text-neon font-bold text-xs md:text-base">7 dias</span>
           </span>
         </motion.div>
       </div>
