@@ -1,0 +1,171 @@
+import { motion } from 'framer-motion';
+import { Zap } from 'lucide-react';
+import logoImg from '../assets/logo-branca3.png';
+import DotGrid from './DotGrid';
+import VSLPlayer from './VSLPlayer';
+
+export default function Hero() {
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-void"
+    >
+      {/* DotGrid background — fills the entire hero */}
+      <div className="absolute inset-0 z-0">
+        <DotGrid
+          dotSize={4}
+          gap={28}
+          baseColor="#2d1a6e"
+          activeColor="#a855f7"
+          proximity={110}
+          speedTrigger={80}
+          shockRadius={220}
+          shockStrength={4}
+          resistance={700}
+          returnDuration={1.4}
+        />
+      </div>
+
+      {/* Gradient overlays on top of dots so the hero content stays readable */}
+      <div className="absolute inset-0 bg-hero-gradient z-[1] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-void/60 via-transparent to-void/80 z-[1] pointer-events-none" />
+
+      {/* BG orbs */}
+      <div className="orb w-[600px] h-[600px] bg-neon/15 -top-40 left-1/2 -translate-x-1/2 z-[1]" />
+      <div className="orb w-[300px] h-[300px] bg-purple-900/20 bottom-20 -left-20 z-[1]" />
+
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 text-center pt-28 pb-16">
+
+        {/* Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: -20, filter: 'blur(10px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="inline-flex items-center gap-2 mb-10 px-4 py-2 rounded-full border border-neon/40 bg-neon/10 text-neon-light text-sm font-medium"
+        >
+          <Zap size={14} className="fill-neon-light" />
+          <span>Curso Online de Desenvolvimento de Jogos</span>
+        </motion.div>
+
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85, filter: 'blur(12px)' }}
+          animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+          transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
+          className="flex justify-center mb-10"
+        >
+          <div className="relative">
+            <img
+              src={logoImg}
+              alt="Start GameDev"
+              className="h-20 md:h-28 w-auto object-contain drop-shadow-[0_0_24px_rgba(124,58,237,0.55)]"
+            />
+          </div>
+        </motion.div>
+
+        {/* Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 30, filter: 'blur(15px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+          className="font-display font-bold text-5xl md:text-7xl text-white leading-tight mb-6"
+        >
+          APRENDA A CRIAR{' '}
+          <span className="relative inline-block">
+            <span className="bg-neon-gradient bg-clip-text text-transparent glow-text">
+              SEU PRIMEIRO JOGO
+            </span>
+            <span className="absolute -bottom-1 left-0 right-0 h-px bg-neon-gradient opacity-60" />
+          </span>
+          {' '}EM POUCOS DIAS
+        </motion.h1>
+
+        {/* Subheadline */}
+        <motion.p
+          initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+          className="text-slate-400 text-xl md:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed"
+        >
+          Mesmo que você <span className="text-white font-medium">não saiba nada</span> sobre
+          desenvolvimento de games
+        </motion.p>
+
+        {/* VSL Video */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, filter: 'blur(20px)' }}
+          animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+          transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
+          className="relative w-full max-w-3xl mx-auto mb-4"
+        >
+          <div className="relative rounded-2xl overflow-hidden video-glow border border-neon/30 bg-void-3">
+            <VSLPlayer />
+          </div>
+        </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0, filter: 'blur(5px)' }}
+          animate={{ opacity: 1, filter: 'blur(0px)' }}
+          transition={{ delay: 0.9, duration: 0.6 }}
+          className="text-slate-500 text-sm mb-10 italic"
+        >
+          *Assista o vídeo com atenção*
+        </motion.p>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: 0.8, delay: 1, ease: "easeOut" }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href="https://go.hotmart.com/V83790993U?ap=ffb4&redirectionUrl=https%3A%2F%2Fcsjdigital.com.br%2Fstart-gamedev-97%2F"
+            className="neon-btn shimmer-btn text-lg px-10 py-5 rounded-2xl font-bold tracking-wide"
+          >
+            <span className="flex items-center gap-2">
+              <Zap size={20} className="fill-white" />
+              Sim, quero aprender a criar um jogo
+            </span>
+          </a>
+        </motion.div>
+
+        {/* Social proof */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+          className="mt-8 flex items-center justify-center gap-6 text-slate-500 text-sm"
+        >
+          <span className="flex items-center gap-1.5">
+            <span className="text-neon font-bold text-base">2.500+</span> alunos
+          </span>
+          <span className="w-1 h-1 rounded-full bg-slate-600" />
+          <span className="flex items-center gap-1.5">
+            <span className="text-neon font-bold text-base">★★★★★</span>
+          </span>
+          <span className="w-1 h-1 rounded-full bg-slate-600" />
+          <span className="flex items-center gap-1.5">
+            Garantia de <span className="text-neon font-bold text-base">7 dias</span>
+          </span>
+        </motion.div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
+      >
+        
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+          className="w-px h-8 bg-gradient-to-b from-neon/50 to-transparent"
+        />
+      </motion.div>
+    </section>
+  );
+}
