@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Users, Star, BookOpen } from 'lucide-react';
 import BorderGlow from './BorderGlow';
-import professorImg from '../assets/wenes-soares.png';
+import professorImg from '../assets/wenes-soares.webp';
 
 export default function Professor() {
   return (
@@ -52,6 +52,8 @@ export default function Professor() {
                     <img 
                       src={professorImg} 
                       alt="Wenes Soares" 
+                      width="600"
+                      height="1067"
                       className="w-full h-full object-cover" 
                     />
                   </div>

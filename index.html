@@ -11,6 +11,38 @@
     <meta property="og:title" content="Start GameDev — Crie Seu Primeiro Jogo" />
     <meta property="og:description" content="Método passo a passo para criar jogos do zero. +2500 alunos. Garantia de 7 dias." />
     <meta property="og:type" content="website" />
+    <!-- Proteção Avançada Anti-Cópia -->
+    <style>
+      body {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      img { pointer-events: none; }
+    </style>
+    <script>
+      // Desabilita Botão Direito
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      
+      // Desabilita Arrastar Arquivos
+      document.addEventListener('dragstart', event => event.preventDefault());
+
+      // Desabilita atalhos de teclado (F12, Ctrl+U, Ctrl+S, Ctrl+C, Ctrl+Shift+I, etc)
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'F12' || e.keyCode === 123) { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); return false; }
+        if (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.key === 'S' || e.key === 's' || e.key === 'P' || e.key === 'p' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); return false; }
+        if (e.metaKey && (e.key === 'U' || e.key === 'u' || e.key === 'S' || e.key === 's' || e.key === 'P' || e.key === 'p' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); return false; }
+      });
+
+      // Trap do Debugger (Proteção Avançada contra DevTools)
+      setInterval(function() {
+        (function() { return false; }['constructor']('debugger')());
+      }, 50);
+    </script>
   </head>
   <body>
     <div id="root"></div>

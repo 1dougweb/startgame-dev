@@ -4,23 +4,23 @@ import Benefits from './components/Benefits';
 import Gallery from './components/Gallery';
 import Curriculum from './components/Curriculum';
 import Testimonials from './components/Testimonials';
+import Guarantee from './components/Guarantee';
 import Pricing from './components/Pricing';
 import Professor from './components/Professor';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <div className="min-h-screen bg-void text-slate-200 overflow-x-hidden">
       <main>
-        <Analytics/>
         <Hero />
         <Benefits />
         <Gallery />
         <Curriculum />
         <Testimonials />
         <Pricing />
+        <Guarantee />
         <Professor />
         <FAQ />
       </main>

@@ -3,9 +3,9 @@ import { Zap } from 'lucide-react';
 import BorderGlow from './BorderGlow';
 
 // Real testimonial screenshots
-import dep1 from '../assets/depoimentos/img-20190807-214213-img-1281776-20190809123233-574x1024-1.jpg';
-import dep2 from '../assets/depoimentos/img-20190809-100439-img-1281776-20190809123451-2-572x1024-1.jpg';
-import dep3 from '../assets/depoimentos/img-4295-576x1024-1.png';
+import dep1 from '../assets/depoimentos/img-20190807-214213-img-1281776-20190809123233-574x1024-1.webp';
+import dep2 from '../assets/depoimentos/img-20190809-100439-img-1281776-20190809123451-2-572x1024-1.webp';
+import dep3 from '../assets/depoimentos/img-4295-576x1024-1.webp';
 
 const screenshots = [dep1, dep2, dep3];
 
@@ -69,6 +69,8 @@ export default function Testimonials() {
                 <img
                   src={src}
                   alt={`Depoimento ${i + 1}`}
+                  width="576"
+                  height="1024"
                   className="w-full md:w-64 lg:w-72 object-cover rounded-[20px] select-none pointer-events-none"
                   draggable={false}
                 />

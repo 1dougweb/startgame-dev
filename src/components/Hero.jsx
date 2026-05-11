@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Zap } from 'lucide-react';
-import logoImg from '../assets/logo-branca3.png';
+import logoImg from '../assets/logo-branca3.webp';
 import DotGrid from './DotGrid';
 import VSLPlayer from './VSLPlayer';
 
@@ -59,6 +59,8 @@ export default function Hero() {
             <img
               src={logoImg}
               alt="Start GameDev"
+              width="600"
+              height="150"
               className="h-14 md:h-28 w-auto object-contain drop-shadow-[0_0_24px_rgba(124,58,237,0.55)]"
             />
           </div>

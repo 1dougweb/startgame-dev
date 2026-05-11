@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Lock, Clock, CheckCircle2, Shield } from 'lucide-react';
 import BorderGlow from './BorderGlow';
-import logoImg from '../assets/logo-branca3.png';
+import logoImg from '../assets/logo-branca3.webp';
 
 const inclusions = [
   'Acesso completo a todos os 11 módulos',
@@ -56,6 +56,8 @@ function PriceCard() {
         <img
           src={logoImg}
           alt="Start GameDev"
+          width="600"
+          height="150"
           className="h-20 w-auto object-contain drop-shadow-[0_0_16px_rgba(124,58,237,0.5)]"
         />
 

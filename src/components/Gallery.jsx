@@ -4,10 +4,10 @@ import BorderGlow from './BorderGlow';
 import ScrollStack, { ScrollStackItem } from './ScrollStack';
 
 // Asset imports
-import print2 from '../assets/print-2-1-1024x579.png';
-import print3 from '../assets/print-3-1-1024x579.png';
-import print4 from '../assets/print-4-1-1024x576.png';
-import print5 from '../assets/print-5-1-1024x579.png';
+import print2 from '../assets/print-2-1-1024x579.webp';
+import print3 from '../assets/print-3-1-1024x579.webp';
+import print4 from '../assets/print-4-1-1024x576.webp';
+import print5 from '../assets/print-5-1-1024x579.webp';
 
 const gameImages = [
   { id: 1, label: 'Sistema de Pesca', img: print2 },
@@ -69,6 +69,8 @@ export default function Gallery() {
                     <img 
                       src={img.img} 
                       alt={img.label} 
+                      width="1024"
+                      height="576"
                       className="w-full h-full object-cover opacity-90 rounded-[32px]" 
                     />
                     
